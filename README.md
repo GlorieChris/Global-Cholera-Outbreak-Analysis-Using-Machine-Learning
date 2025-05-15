@@ -17,20 +17,20 @@ This project uses global cholera surveillance data to:
 
 By focusing on the number of reported cholera cases as the target variable, the analysis provides insights into patterns that can inform global health planning.
 
-📊 Dataset Description
+## 📊 Dataset Description
 The dataset includes yearly records of cholera outbreaks from multiple countries, with features such as:
 
-Country: Nation where cholera cases were reported
+- Country: The name of the country where cholera cases were reported. This helps in identifying geographic trends and regional hotspots for cholera outbreaks.
 
-WHO Region: Associated WHO regional group
+- WHO Region: The World Health Organization regional grouping for each country (e.g., Eastern Mediterranean, Africa, South-East Asia). Useful for regional aggregation and comparative analysis.
 
-Year: Year of the report
+- Year: The calendar year in which the cholera cases and deaths were reported. Useful for analyzing time-based trends, spikes, or reductions in cholera outbreaks.
 
-Number of Reported Cases (Target Variable)
+- Number of reported cases of cholera (Target Variable): Total number of cholera cases officially reported in that country for the given year. This is the target variable used for prediction.
 
-Deaths (optional in some rows)
+- Number of reported deaths from cholera: The Total number of deaths caused by cholera in that country during the specified year. It provides insight into the severity and impact of outbreaks.
 
-The data spans multiple continents and regions, enabling a global-scale analysis.
+- Cholera case fatality rate: The percentage of reported cholera cases that resulted in death. Calculated as (deaths / cases) * 100. It helps assess how deadly the outbreaks are in different regions or years.
 
 🔑 Key Steps
 Data Cleaning
