@@ -4,16 +4,16 @@ Visualizing and predicting global cholera outbreaks using machine learning to su
 ## 📌 Project Overview
 This project analyzes global cholera outbreak data to uncover patterns in the number of reported cases across different countries and years. Beyond visual analysis, machine learning models are applied to predict the number of cholera cases based on features such as year, region, and country. The aim is to support data-driven decisions for international health policy, outbreak prediction, and targeted interventions.
 
-🧾 Problem Statement
+## 🧾 Problem Statement
 Cholera continues to be a major global health concern, particularly in developing countries with limited access to clean water and sanitation. Understanding the dynamics of cholera outbreaks—where and when they occur—is vital to preventing future outbreaks and saving lives.
 
 This project uses global cholera surveillance data to:
 
-Visualize the spread and burden of cholera cases by year and country
+- Visualize the spread and burden of cholera cases by year and country
 
-Identify high-risk countries and regions
+- Identify high-risk countries and regions
 
-Apply machine learning techniques to predict reported cholera cases and uncover driving factors
+- Apply machine learning techniques to predict reported cholera cases and uncover driving factors
 
 By focusing on the number of reported cholera cases as the target variable, the analysis provides insights into patterns that can inform global health planning.
 
