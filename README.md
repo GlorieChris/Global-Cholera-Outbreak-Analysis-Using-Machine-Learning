@@ -32,31 +32,57 @@ The dataset includes yearly records of cholera outbreaks from multiple countries
 
 - Cholera case fatality rate: The percentage of reported cholera cases that resulted in death. Calculated as (deaths / cases) * 100. It helps assess how deadly the outbreaks are in different regions or years.
 
-🔑 Key Steps
-Data Cleaning
+## 🔑 Key Steps
 
-Removed null values and irrelevant columns
+1. Data Loading and Cleaning
+- Loaded the global cholera dataset
 
-Converted year and case-related data to appropriate formats
+- Removed null values and columns with insufficient data
 
-Normalized country and region labels
+- Verified and corrected data types (e.g., years, numeric columns)
 
-Exploratory Data Analysis (EDA)
+- Renamed columns for consistency and ease of use
 
-Top 10 countries with highest cholera cases
+2. Exploratory Data Analysis (EDA)
+- Identified Top 50 countries with the highest number of reported cholera cases
 
-Year-by-year trend of outbreaks globally
+- Analyzed cholera case trends year by year
 
-Regional breakdown using bar and pie charts
+- Compared regions (WHO-defined) to see burden of outbreaks
 
-Case Fatality Rate computation
+- Calculated Case Fatality Rates (CFR) for different countries and years
 
-Geospatial Visualization
+- Used bar plots for visual representation
 
-Choropleth world map to show distribution of cholera cases globally
+3. Geospatial Visualization
+- Created a world map (choropleth) of cholera cases using matplotlyb
 
-Machine Learning Modeling
+- Mapped cases by country using ISO codes and interactive visuals
 
-Feature selection: Country (encoded), WHO Region (encoded), Year
+4. Feature Engineering
+- Encoded categorical features like Country and WHO Region
 
-Target variable: Reported cholera cases
+- Selected Year, Encoded Country, Encoded Region as features
+
+- Used Number of Reported Cases as the target variable
+
+5. Model Building
+Trained and tested the following regression models:
+
+- Linear Regression
+
+- Decision Tree Regressor
+
+- Random Forest Regressor
+
+6. Model Evaluation
+Measured model performance using:
+
+- R² Score
+
+- Mean Squared Error (MSE)
+
+- Root Mean Squared Error (RMSE)
+
+Random Forest Regressor gave the best performance
+
