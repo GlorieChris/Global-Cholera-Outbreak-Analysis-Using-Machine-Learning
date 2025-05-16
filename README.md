@@ -130,3 +130,19 @@ Random Forest Regressor gave the best performance
 - Deploy the model using Streamlit or Flask for real-time predictions
 
 - Use time-series models like ARIMA or LSTM for forecasting outbreaks
+
+  🚀 How to Run
+Clone the repository:
+git clone https://github.com/YOUR_USERNAME/Global-Cholera-Analysis.git
+Navigate to project folder and open notebook:
+
+bash
+Copy
+Edit
+jupyter notebook Cholera.ipynb
+Install required dependencies:
+
+bash
+Copy
+Edit
+pip install pandas numpy matplotlib seaborn plotly scikit-learn geopandas pycount
