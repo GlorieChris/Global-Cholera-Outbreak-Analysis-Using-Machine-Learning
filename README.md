@@ -18,19 +18,19 @@ This project uses global cholera surveillance data to:
 By focusing on the number of reported cholera cases as the target variable, the analysis provides insights into patterns that can inform global health planning.
 
 ## 📊 Dataset Description
-The dataset includes yearly records of cholera outbreaks from multiple countries, with features such as:
+- The dataset includes yearly records of cholera outbreaks from multiple countries, with features such as:
 
-- Country: The name of the country where cholera cases were reported. This helps in identifying geographic trends and regional hotspots for cholera outbreaks.
+  - Country: The name of the country where cholera cases were reported. This helps in identifying geographic trends and regional hotspots for cholera outbreaks.
 
-- WHO Region: The World Health Organization regional grouping for each country (e.g., Eastern Mediterranean, Africa, South-East Asia). Useful for regional aggregation and comparative analysis.
+  - WHO Region: The World Health Organization regional grouping for each country (e.g., Eastern Mediterranean, Africa, South-East Asia). Useful for regional aggregation and comparative analysis.
 
-- Year: The calendar year in which the cholera cases and deaths were reported. Useful for analyzing time-based trends, spikes, or reductions in cholera outbreaks.
+  - Year: The calendar year in which the cholera cases and deaths were reported. Useful for analyzing time-based trends, spikes, or reductions in cholera outbreaks.
 
-- Number of reported cases of cholera (Target Variable): Total number of cholera cases officially reported in that country for the given year. This is the target variable used for prediction.
+  - Number of reported cases of cholera (Target Variable): Total number of cholera cases officially reported in that country for the given year. This is the target variable used for prediction.
 
-- Number of reported deaths from cholera: The Total number of deaths caused by cholera in that country during the specified year. It provides insight into the severity and impact of outbreaks.
+  - Number of reported deaths from cholera: The Total number of deaths caused by cholera in that country during the specified year. It provides insight into the severity and impact of outbreaks.
 
-- Cholera case fatality rate: The percentage of reported cholera cases that resulted in death. Calculated as (deaths / cases) * 100. It helps assess how deadly the outbreaks are in different regions or years.
+  - Cholera case fatality rate: The percentage of reported cholera cases that resulted in death. Calculated as (deaths / cases) * 100. It helps assess how deadly the outbreaks are in different regions or years.
 
 ## 🔑 Key Steps
 
@@ -66,7 +66,7 @@ The dataset includes yearly records of cholera outbreaks from multiple countries
 
 - Used Number of Reported Cases as the target variable
 
-5. Model Building
+## 🤖 Models Used
 Trained and tested the following regression models:
 
 - Linear Regression
@@ -75,7 +75,7 @@ Trained and tested the following regression models:
 
 - Random Forest Regressor
 
-6. Model Evaluation
+## 🧪 Model Evaluation
 Measured model performance using:
 
 - R² Score
@@ -86,3 +86,47 @@ Measured model performance using:
 
 Random Forest Regressor gave the best performance
 
+## 📈 Key Insights 
+🔝 Cholera cases are heavily concentrated in a few countries, with the Top 10 countries accounting for a major share of global reported cases between 2000–2016.
+
+🌍 India, Haiti, Peru, and African countries dominate the top 50, with nations like the Democratic Republic of Congo, Mozambique, and Tanzania consistently reporting high numbers.
+
+📉 Some countries show declining trends, while others have irregular spikes, suggesting outbreaks are often linked to local conditions like conflict, flooding, or water crisis.
+
+📆 Yearly trends reveal that cholera cases do not consistently rise or fall globally, indicating regional variations and different levels of health infrastructure.
+
+📊 The Case Fatality Rate (CFR) is relatively low in most countries. Still, spikes in a few, like Italy, Bangladesh, and Oman show where cholera is more deadly, possibly due to delayed response or healthcare access issues.
+
+🧭 WHO Region-wise analysis shows:
+
+- Africa and the Eastern Mediterranean consistently carry the heaviest burden.
+
+- South-East Asia and Europe show a decline in trend over the years
+
+- Americas and Western Pacific report little, static to no activity, highlighting regional inequalities.
+
+- 🗺️ The world map visualization clearly shows Countries clustering of outbreaks.
+
+- 🤖 Random Forest Regressor outperformed other models, showing it captured the nonlinear relationships in cholera case prediction better than Linear or Decision Tree models.
+
+⚙️ Tools & Technologies
+- Python
+
+- Pandas, NumPy
+
+- Matplotlib, Seaborn, Plotly
+
+- Scikit-learn
+
+- GeoPandas, PyCountry
+
+- Jupyter Notebook
+
+💡 Future Improvements
+- Incorporate climate data (e.g., rainfall, temperature)
+
+- Add socioeconomic indicators like access to water, sanitation, and population density
+
+- Deploy the model using Streamlit or Flask for real-time predictions
+
+- Use time-series models like ARIMA or LSTM for forecasting outbreaks
