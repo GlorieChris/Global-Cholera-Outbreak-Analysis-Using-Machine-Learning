@@ -35,36 +35,36 @@ By focusing on the number of reported cholera cases as the target variable, the 
 ## 🔑 Key Steps
 
 1. Data Loading and Cleaning
-- Loaded the global cholera dataset
+  - Loaded the global cholera dataset
 
-- Removed null values and columns with insufficient data
+  - Removed null values and columns with insufficient data
 
-- Verified and corrected data types (e.g., years, numeric columns)
+  - Verified and corrected data types (e.g., years, numeric columns)
 
-- Renamed columns for consistency and ease of use
+  - Renamed columns for consistency and ease of use
 
 2. Exploratory Data Analysis (EDA)
-- Identified Top 50 countries with the highest number of reported cholera cases
+  - Identified Top 50 countries with the highest number of reported cholera cases
 
-- Analyzed cholera case trends year by year
+  - Analyzed cholera case trends year by year
 
-- Compared regions (WHO-defined) to see burden of outbreaks
+  - Compared regions (WHO-defined) to see burden of outbreaks
 
-- Calculated Case Fatality Rates (CFR) for different countries and years
+  - Calculated Case Fatality Rates (CFR) for different countries and years
 
-- Used bar plots for visual representation
+  - Used bar plots for visual representation
 
 3. Geospatial Visualization
-- Created a world map (choropleth) of cholera cases using matplotlyb
+  - Created a world map (choropleth) of cholera cases using matplotlyb
 
-- Mapped cases by country using ISO codes and interactive visuals
+  - Mapped cases by country using ISO codes and interactive visuals
 
 4. Feature Engineering
-- Encoded categorical features like Country and WHO Region
+  - Encoded categorical features like Country and WHO Region
 
-- Selected Year, Encoded Country, Encoded Region as features
+  - Selected Year, Encoded Country, Encoded Region as features
 
-- Used Number of Reported Cases as the target variable
+  - Used Number of Reported Cases as the target variable
 
 ## 🤖 Models Used
 Trained and tested the following regression models:
@@ -109,7 +109,7 @@ Random Forest Regressor gave the best performance
 
 - 🤖 Random Forest Regressor outperformed other models, showing it captured the nonlinear relationships in cholera case prediction better than Linear or Decision Tree models.
 
-⚙️ Tools & Technologies
+## ⚙️ Tools & Technologies
 - Python
 
 - Pandas, NumPy
@@ -122,7 +122,7 @@ Random Forest Regressor gave the best performance
 
 - Jupyter Notebook
 
-💡 Future Improvements
+## 💡 Future Improvements
 - Incorporate climate data (e.g., rainfall, temperature)
 
 - Add socioeconomic indicators like access to water, sanitation, and population density
